@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+/* html reset */
+* {
+	box-sizing: border-box;
+}
+article, aside, figcaption, figure, footer, header, main, nav, section { 
+    display:block; 
+}
+body, input, button, select, textarea, table {
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 12px;
+}
+body {
+	font-size: 15px;
+	line-height: 1.5;
+	color: #333;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight: normal;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+li {
+	display: inline-block;
+}
+img {
+	border: none;
+	vertical-align: top;
+	max-width: 100%; /* 반응형 웹일 경우 */
+}
+address {
+	font-size: normal;
+	font-style: normal;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.hidden {
+	position: absolute;
+	left: -99999px;
+	top: -99999px;
+	font-size: 0.1%;
+	line-height: 0.1%;
+	width: 0.1%;
+	height: 0.1%;
+	overflow: hidden;
+}
+
+/* layout */
+.wrap {
+	width: 940px;
+	margin: auto;
+}
+a.skip {
+	height: 1px;
+	display: block;
+	overflow: hidden;
+	position: absolute;
+}
+a.skip:focus {
+	height: auto;
+	background: #333;
+	color: #fff;
+	font-size: 12px;
+	padding: 8px 30px;
+}
+header {
+	padding: 35px 0 0px;
+}
+header .wrap {
+	position: relative;
+}
+header h1 {
+	padding:14px 51px 0;
+	float: left;
+}
+.gnb ul {
+	line-height: 30px;
+	float: right;
+	font-size: 0;
+}
+.gnb>ul>li>a {
+	display: block;
+	font-size: 17px;
+	color: #545454;
+	font-weight: bold;
+	padding: 16px 20px 26px;
+	letter-spacing: -0.5px;
+}
+.gnb>ul>li>a:hover {
+	background: #2b8ed1;
+	color: #fff;
+}
+.gnb>ul li {
+	background: url(../img/bar_top.gif) no-repeat left 20px;
+}
+.gnb>ul li:hover+li {
+	background: none;
+}
+.gnb>ul li:first-child {
+	background: none;
+}
+.util {
+	position: absolute;
+	right: 0;
+	top: -25px;
+	font-size: 0;
+}
+.util li {
+	padding-left: 10px;
+	margin-left: 10px;
+	background: url(../img/bar_utill.jpg) no-repeat left center;	
+}
+.util li:first-child {
+	background: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+.util li a {
+	font-size: 9px;
+	color: #939393;
+	font-weight: bold;
+}
+.box {
+	border: 3px solid #2b8ed1;
+	width: 940px;
+	margin: auto;
+}
+.body {
+	background: #edeee6;
+}
+main {
+	background: #edeee6;
+	position: relative;
+}
+.con .img1 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.con .img2 {
+	position: absolute;
+	bottom: 0;
+	right: 314px;
+}
+.con .img3 {
+	position: absolute;
+	bottom: 0;	
+	right: 0;
+}
+section {
+	position: relative;
+}
+section .jopen {
+	position: relative;
+}
+.jopen .title {
+	margin: 0;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+.jopen .sub {
+	color: #000;
+	font-size: 10px;
+}
+.jopen ul {
+	position: absolute;
+	top: 70px;
+	left: 30px;
+	border-bottom: 1px solid #7a59b2;
+	font-size: 13px;
+	width: 60%;
+	padding-bottom: 2px;
+	word-spacing: -0.3em;
+}
+.jopen ul li {
+	color: #7a59b2;
+	background: url(../img/bar_table.gif) no-repeat 0 center;
+}
+.jopen ul li:first-child {
+	background: none;
+}
+.jopen li a {
+	color: #fff;
+	font-weight: bold;
+	padding: 4px 13px;
+}
+.jopen ul li a:hover {
+	background: #fff;
+	color: #6b46a9;
+}
+.jopen ul li:hover+li {
+	background: none;
+}
+.jopen table {
+	position: absolute;
+	top: 120px;
+	left: 200px;
+	border-collapse: collapse;
+	font-family: Dotum, sans-serif;
+}
+.jopen table tr:first-child a {
+	color: #fff;
+}
+.jopen table tr:first-child .impor {
+	color: yellow;
+	font-weight: bold;
+}
+.jopen table .new {
+	background: #ffd85a;
+	color: #705b1c;
+	padding: 0 3px;
+}
+.jopen table td {
+	border-bottom: 1px solid #7a59b2;
+	padding-left: 10px;
+}
+.jopen table td a {
+	color: #c7b2e9;
+}
+.jopen table td:nth-child(2) {
+	border-left: 1px solid #7a59b2;
+}
+.jopen .page {
+	position: absolute;
+	bottom: 20px;
+	left: 345px;
+	color: #c7b2e9;
+	font-family: Dotum, sans-serif;
+	font-size: 12px;
+}
+.jopen .page a {
+	margin: 3px;
+	color: #c7b2e9; 
+}
+.jopen .page a:hover {
+	font-weight: bold; 
+}
+section .img4 {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+section .img5 {
+	position: absolute;
+	top: 157px;
+	right: 0;
+}
+footer {
+	color: #878787;
+	font-size: 12px;
+	text-align: center;
+	margin: 50px;
+	font-weight: bold;
+}

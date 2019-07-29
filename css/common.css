@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+/* reset*/
+article, aside, figcaption, figure, footer, header, main, nav, section {
+			display: block;
+}
+body {
+	margin: 0;
+}
+.wrap {
+	width: 960px;
+	margin: auto;
+}
+.clearfix:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+h1 {
+	margin-bottom: 0;
+	float: left;
+}
+h1 a {
+	color: #000;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+.gnb {
+	margin-top: 20px;
+	width: 760px;
+	float: right;
+}
+.gnb ul {
+	font-size: 0;
+	background-color: #000;
+	padding: 0px;
+	margin: 0px;
+}
+.gnb li {
+	display: inline-block;
+	font-size: 16px;
+}
+.gnb ul li a {
+	color: #fff;
+	display: block;
+	background-color: #000;
+	padding: 10px 20px;
+}
+.gnb ul li a:hover {
+	color: yellow;
+	background-color: red;
+}
+.inArea {
+	margin-top: 20px;
+}
+.side {
+	float: left;
+}
+.lnb ul {
+	width: 200px;
+	margin: 15px 0 20px;
+	margin-right: 30px;
+	padding-left: 0;	
+}
+.lnb ul li a {
+	color: #000;
+	border: 1px solid none;	
+	background-color: #ccc;
+	display: block;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+.lnb ul li a:hover {
+	color: #fff;
+	background-color: #000;
+}
+aside {
+	margin-top: 15px;
+	float: right;
+	width: 150px;
+	background-color: #ccc;
+	min-height: 100px;
+}
+main {
+	float: left;
+	width: 550px;
+}
+main>* {
+	min-height: 200px;
+	background-color: #ccc;
+}
+section {
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+footer {
+	padding: 15px 0;
+	background-color: #ccc;
+	margin: 20px 0;
+	text-align: center;
+}
+footer address {
+	font-style: normal;
+}
+footer p {
+	margin: 0;
+}
+footer p small {
+	font-size: 16px;
+}

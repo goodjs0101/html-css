@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>form</title>
+	<style>
+		form {
+			width: 800px;
+			margin: auto;
+		}
+		fieldset {
+			padding: 30px;
+		}
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		caption {
+			margin-bottom: 10px;
+		}
+		th, td {
+			border: 1px solid #000; 
+			padding: 8px;
+		}
+		th {
+			background-color: #ccc;
+			width: 120px;
+		}
+		input::placeholder {
+			color: silver;
+			font-size: 11px;
+		}
+		input[type="button"] {
+			background-color: #333;
+			color: #fff;
+			font-size: 11px;
+			padding: 3px 5px;
+			border: none;
+		}
+		input[readonly] {
+			background-color: #e4e4e4;
+			border: 1px solid #ccc;
+			outline: none;
+		}
+		.btn {
+			margin-top: 20px;
+			text-align: center;
+		}
+		.btn input {
+			padding: 10px 25px;
+			border: 1px solid red;
+		}
+		.btn input[type="submit"] {
+			background-color: red;
+			color: #fff; 
+		}
+		.btn input[type="reset"] {
+			background-color: #fff;
+			color: red; 
+		}
+		input[type="image"] {
+			vertical-align: middle;
+		}
+		textarea {
+			resize: none;
+		}
+	</style>
+</head>
+<body>
+	<form name="" method="" action="" target="">
+		<h1>Form</h1>
+		<fieldset>
+			<legend>input</legend>
+			<table>
+				<caption>기본정보</caption>
+				<tr>
+					<th scope="row"><label for="memberId">아이디</label></th>
+					<td>
+						<input type="text" name="memId" size="10" maxlength="12" value="" placeholder="아이디" id="memberId" autofocus>
+						<input type="button" value="중복 확인">
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="memberPW">비밀번호</label></th>
+					<td><input type="password" name="pw" size="10" maxlength="12" placeholder="비밀번호" id="memberPW"></td>
+				</tr>
+				<tr>
+					<th scope="row">생년월일</th>
+					<td>
+						<label><input type="text" name="year" size="4" maxlength="4">년</label>
+						<label><input type="text" name="month" size="2" maxlength="2">월</label>
+						<label><input type="text" name="day" size="2" maxlength="2">일</label>
+						<label><input type="radio" name="birth" value="solar" checked> 양력</label>
+						<label><input type="radio" name="birth" value="lunar"> 음력</label>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="zip">주소</label></th>
+					<td>
+						<input type="text" name="zip" id="zip" readonly>
+						<input type="button" value="우편번호 검색" size="10"><br>
+						<input type="text" name="add" size="70" title="상세주소">
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">SNS</th>
+					<td>
+						<label><input type="checkbox" name="sns" value="fa"> facebook</label> 
+						<label><input type="checkbox" name="sns" value="tw"> twitter</label>
+						<label><input type="checkbox" name="sns" value="in"> instagram</label>
+						<label><input type="checkbox" name="sns" value="bl"> blog</label>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="img">프로필사진<label></th>
+					<td>
+						<input type="file" name="file" id="img">
+					</td>
+				</tr>
+			</table>
+			<div class="btn">
+				<input type="submit" value="입력완료">
+				<input type="reset" value="입력취소">
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>input - html5</legend>
+			<table>
+				<caption>추가 정보</caption>
+					<tr>
+						<th scope="row">검색</th>
+						<td>
+							<input type="search" name="search">
+							<input type="image" src="../img/btn_search.gif" alt="검색">
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">웹사이트</th>
+						<td><input type="url" name="url"></td>
+					</tr>
+					<tr>
+						<th scope="row">이메일</th>
+						<td><input type="email" name="email"></td>
+					</tr>
+					<tr>
+						<th scope="row">연락처</th>
+						<td><input type="tel" name="tel" required></td>
+					</tr>
+					<tr>
+						<th scope="row">개수</th>
+						<td><input type="number" name="number" min="1" max="10" value="1"></td>
+					</tr>
+					<tr>
+						<th scope="row">범위</th>
+						<td><input type="range" name="range" min="1" max="5" value="5"></td>
+					</tr>
+					<tr>
+						<th scope="row">좋아하는 색</th>
+						<td><input type="color" name="color"></td>
+					</tr>
+					<tr>
+						<th scope="row">날짜</th>
+						<td><input type="date" name="date"></td>
+					</tr>
+					<tr>
+						<th scope="row">시간</th>
+						<td><input type="time" name="time"></td>
+					</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend>그 밖의 form 요소들</legend>
+			<table>
+				<caption>기타정보</caption>
+				<tr>
+					<th scope="row"><label for="job">관심분야</label></th>
+					<td>
+						<select name="job" id="job" size="1">
+							<option>관심분야를 선택하세요.</option>
+							<optgroup label="웹 개발">
+								<option value="H">HTML</option>
+								<option value="C">CSS</option>
+								<option value="J">JavaScript</option>
+							</optgroup>
+							<optgroup label="웹 디자인">
+								<option value="P">PhotoShop</option>
+								<option value="I">Illustrator</option>
+							</optgroup>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">자기소개</th>
+					<td>
+						<textarea name="info" cols="65" rows="10"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">진행상태</th>
+					<td>
+						<progress value="20" max="100"></progress>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">용량</th>
+					<td><meter value="20" max="100"></meter></td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+</body>
+</html>

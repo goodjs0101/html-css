@@ -1,0 +1,310 @@
+@charset "utf-8";
+
+/* reset*/
+article, aside, figcaption, figure, footer, header, main, nav, section {
+	display: block;
+}
+body, input, select, button, textarea, table {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+	margin: 0;
+	font-size: 14px;
+	color: #666;
+	line-height: 1.5;
+}
+a {
+	text-decoration: none;
+	color: #666;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+address {
+	font-style: normal;
+}
+img {
+	border: none;
+	vertical-align:top;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* layout */
+.wrap {
+	width: 960px;
+	margin: auto;
+}
+header {
+	background: url(../img/bg_top.gif) repeat-x;
+	margin-bottom: 40px;
+}
+header .wrap {
+	position: relative;
+}
+header h1 {
+	padding-top: 35px;
+	float: left;
+}
+.gnb {
+	width: 800px;
+	float: right;
+	margin-top: 25px;
+}
+.gnb>ul {
+	font-size: 0;
+}
+.gnb li {
+	display: inline-block;
+}
+.gnb>ul>li {
+	width: 20%;
+}
+.gnb>ul>li>a {
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	line-height: 55px;
+}
+.gnb>ul>li>a:hover, .gnb>ul>li.act>a {
+	background: #fff;
+	color: #007cbc;
+}
+.gnb ul ul {
+	display: none;
+}
+.gnb li.act ul {
+	display: block;
+	position: absolute;
+	margin-top: 10px;
+}
+.gnb li:nth-child(4) ul, 
+.gnb li:nth-child(5) ul {
+	right: 0;
+}
+.gnb li.act ul li {
+	margin-left: 20px;
+	font-size: 14px;
+}
+.gnb li.act ul li a:hover {
+	color: #007cbc;
+}
+.util {
+	position: absolute;
+	right: 0;
+	top: 3px;
+	font-size: 0;
+}
+.util li {
+	display: inline-block;
+	background: url(../img/bar_util.gif) no-repeat left center;
+	font-size: 12px;
+	padding-left: 10px;
+	margin-left: 10px;
+}
+.util li:first-child {
+	background: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+.con {
+	margin: 30px 0 50px;
+}
+.side {
+	width: 180px;
+	float: left;
+}
+.side h2 {
+	font-size: 26px;
+	color: #000;
+}
+.side li {
+	border-top: 1px dashed #bdbdbd;
+	padding: 10px 10px;
+}
+.side .act {
+	background: #e3e3e3 url(../img/icon_arrow.png) no-repeat 90% center;
+	border-top: none;
+}
+.side .act+li {
+	border-top: none;
+}
+.side .lnb li:last-child {
+	border-bottom: 1px dashed #bdbdbd;
+}
+.side .act a,.side a:hover {
+	color: #007cbc;
+}
+main {
+	width: 740px;
+	float: right;
+}
+main h3 {
+	font-size: 36px;
+	color: #000;
+}
+main .title {
+	font-size: 16px;
+	margin: 0 0 30px;
+}
+footer {
+	background-color: #495860;
+	padding: 20px 0;
+}
+footer .footerlogo {
+	float: left;
+	margin-right: 10px;
+}
+footer .info {
+	float: left;
+}
+footer li {
+	background: url(../img/bar_footer.gif) no-repeat 0 center;
+	float: left;
+}
+footer li:first-child {
+	background: none;
+}
+footer li:first-child a {
+	color: #fff;
+}
+footer .info a {
+	color: #a0aab0;
+	margin: 0 10px;
+}
+footer address, .copy {
+	margin-left: 10px;
+	font-size: 12px;
+	color: #a0aab0;
+}
+footer address {
+	margin-top: 10px;
+}
+footer .copy {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+footer .footerccm {
+	float: right;
+}
+
+/* skip */
+a.skip {
+	height: 1px;
+	display: block;
+	overflow: hidden;
+	position: absolute;
+}
+a.skip:focus {
+	height: auto;
+	background: #333;
+	color: #fff;
+	font-size: 12px;
+	padding: 8px 30px;
+}
+
+/* IR 기번 */
+.ban1 {
+	margin-top: 30px;
+}
+.ban1 a {
+	background: url(../img/banner1_off.jpg) no-repeat;
+	padding-top: 86px;
+	height: 0;
+	overflow: hidden;
+	display: block;
+}
+.ban1 a:hover {
+	background-image: url(../img/banner1_on.jpg);
+}
+.vision {
+	background: url(../img/vision.jpg) no-repeat;
+	padding-top: 518px;
+	height: 0;
+	overflow: hidden;
+}
+
+/* IS 기법 */
+.naver li {
+	display: inline-block;
+	margin-right: 20px;
+}
+.naver li a {
+	background: url(../img/is_nav.png) no-repeat;
+	padding-top: 18px;
+	height: 0;
+	overflow: hidden;
+	display: block;
+	font-size: 17px;
+}
+.naver li.n1 a {
+	background-position: -0px -325px;
+}
+.naver li.n2 a {
+	background-position: -320px -59px;
+}
+.naver li.n3 a {
+	background-position: -114px -208px;
+}
+.naver li.n4 a {
+	background-position: -261px -0px;
+}
+.naver li.n5 a {
+	background-position: -190px -29px;
+}
+
+/* IS 기법 - 롤오버 효과 */
+.tab {
+	background-color: #007cbc;
+	margin-bottom: 30px;
+	font-size: 0;
+}
+.tab li {
+	font-size: 16px;
+	display: inline-block;
+}
+.tab li a{
+	background: url(../img/is_tab.gif) no-repeat;
+	padding-top: 45px;
+	height: 0;
+	overflow: hidden;
+	display: block;
+}
+.tab ul {
+	background-color: #eff3f4;
+}
+.tab li:nth-child(1) a {
+	width: 135px;
+	background-position: 0 0;
+}
+.tab li:nth-child(2) a {
+	width: 175px;
+	background-position: -136px -90px;
+}
+.tab li:nth-child(2) a:hover {
+	background-position: -136px -45px;
+}
+.tab li:nth-child(3) a {
+	width: 175px;
+	background-position: -311px -90px;
+}
+.tab li:nth-child(3) a:hover {
+	background-position: -311px -45px;
+}
+.tab li:nth-child(4) a {
+	width: 160px;
+	background-position: -486px -90px;
+}
+.tab li:nth-child(4) a:hover {
+	background-position: -486px -45px;
+}

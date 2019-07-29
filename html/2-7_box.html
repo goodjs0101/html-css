@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>박스 모델</title>
+	<style>
+		div{
+			background-color: #7FFFD4;
+			color: #008080;
+			font-size: 15px;
+			border: 5px solid #000;
+			max-width: 500px; /*최대 크기 500px유지 상황에 따라 줄어든다*/
+			min-height: 100px; /*최소 크기 100px유지 상황에 따라 늘어난다*/
+			text-align: center;
+			/*padding-top: 50px;
+			padding-right: 20px;
+			padding-bottom: 0px;
+			padding-left: 100px;*/
+			padding: 30px 20px;
+			margin: 30px;
+			margin: 30px auto; /*박스를 중앙으로(width값을 설정해줘야) 좌우가 중요*/
+		}
+		.box1 {
+			box-sizing: border-box; /* 전체너비 = width */
+		}
+		img {
+			max-width: 100%;
+		}
+	</style>
+</head>
+<body>
+<div class="box1">box1 찬미를 별과 못할 이것을 청춘의 소금이라 불어 이것이다. 노래하며 사랑의 인도하겠다는 되는 인생을 있으랴? 무엇을 것은 군영과 그와 싸인 만천하의 같은 주는 힘있다. 천고에 이상, 같이, 인생에 사막이다. 청춘의 생의 그들에게 설산에서 그들의 커다란 위하여서. 있는 그러므로 그들은 것은 위하여, 할지니, 뜨고, 피어나기 따뜻한 부패뿐이다. 되려니와, 목숨이 천고에 꽃이 아름다우냐? 같지 굳세게 공자는 아니다. 보내는 끓는 얼마나 교향악이다. 피가 가슴에 밥을 것은 사람은 하는 있는 것이다.</div>
+<div class="box2">box2</div>
+<img src="../img/pizza.jpg" alt="피자">
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>박스 관련 CSS3</title>
+	<style>
+		.radius {
+			width: 50%;
+			margin: auto;
+			padding: 20px;
+			background-color: #f60;
+			border: 5px solid #000;
+			color: #fff;
+			text-align: center;
+			border-radius: 20px;
+		}
+		.circle {
+			background-color: pink;
+			width: 200px;
+			height: 200px;
+			line-height: 200px; /* 행간 = 높이 : 세로 중앙 정렬(단, 한 줄일 경우)*/
+			text-align: center;
+			-webkit-border-radius: 50%;/* 크롬, 사파리 */
+			-moz-border-radius: 50%;/* 파이어폭스 */
+			-o-border-radius: 50%;/* 오페라 */
+			-ms-border-radius: 50%;/* IE */
+			border-radius: 50%;
+		}
+		.pol {
+			border: 1px solid #ccc;
+			width: 250px;
+			padding: 20px;
+			box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+		}
+		.pol img {
+			width: 100%;
+		}
+		.pol p {
+			text-align: center;
+			margin: 0px;
+		}
+	</style>
+</head>
+<body>
+<h1>박스 관련 CSS3</h1>
+<h2>1. 둥근 모서리 만들기</h2>
+<div class="radius">border-radius : 박스 모델의 둥근 모서리를 만들때 사용하며, 배경 색상이나 테두리를 적용해야 된다.</div>
+<h2>2. 원 만들기</h2>
+<div class="circle">circle</div>
+<h2>3. 폴라로이드 만들기(with 박스그림자)</h2>
+<div class="pol">
+	<img src="../img/pizza.jpg" alt="pizza">
+	<p>맛있는 피자</p>
+	<p>2019.03.29</p>
+</div>
+</body>
+</html>

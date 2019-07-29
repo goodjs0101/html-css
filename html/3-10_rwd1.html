@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minmum-scale=0.25, maximum-scale=5">
+	<meta charset="utf-8">
+	<title>반응형 웹</title>
+	<!-- [if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif] -->
+	<style>
+		/* all */
+		html {
+			min-height: 100%;
+		}
+		body {
+			background: linear-gradient(180deg, #ccc 0%, #fff 100%);
+		}
+		.wrap {
+			width: 90%;
+			margin: auto;
+			text-align: center;
+		}
+		.wrap div {
+			background: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 5px #666;
+			min-height: 200px;
+			line-height: 200px;
+			margin: 0 5px 10px;
+		}
+
+		/* mobile */
+		h1 {
+			font-size: 30px;
+		}
+		/* tablet & desktop */
+		@media all and (min-width: 768px) {
+			.wrap div {
+				float: left;
+			}
+		}
+
+		/* tablet */
+		@media all and (min-width: 768px) and (max-width: 1024px) {
+			h1 {
+				font-size: 40px;
+			}
+			.wrap div {
+				/*width: 48.6% IE8이하 버전에서 */
+				width: calc(50% - 10px);
+			}
+		}
+
+		/* desktop */
+		@media all and (min-width: 1025px) {
+			h1 {
+				font-size: 50px;
+			}
+			.wrap div {
+				width: calc(100%/3 - 10px);
+			}
+
+		}
+	</style>
+</head>
+<body>
+<div class="wrap">
+	<h1>Responsive Web</h1>
+	<div>box1</div>
+	<div>box2</div>
+	<div>box3</div>
+	<div>box4</div>
+	<div>box5</div>
+	<div>box6</div>
+</div>
+</body>
+</html>

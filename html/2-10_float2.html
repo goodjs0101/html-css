@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>float</title>
+	<style>
+		.parents {
+			background-color: #ddd;
+			/* overflow: hidden; 넘치는 내용을 자른다. */
+		}
+		.clearfix:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.child1, .child2 {
+			border: 1px solid #000;
+		}
+		.child1 {
+			float: left;
+		}
+		.child2 {
+			float: right;
+		}
+		/*.child3 {
+			clear: both;
+		}*/
+		.brother {
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+<div class="parents clearfix">
+	<div class="child1">child1</div>
+	<div class="child2">child2</div>
+	<!-- <div class="child3"></div> 의미없는 빈 요소 삽입 -->
+</div>
+<div class="brother">brother</div>
+</body>
+</html>

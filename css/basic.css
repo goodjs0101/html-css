@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+h3 {
+	color: green;
+}
+/* 
+* {
+	color: silver;
+}
+li {
+	color: pink;
+}
+*/
+.list1 {
+	color: red;
+}
+#list2 {
+	color: skyblue;
+}
+.list {
+	color: red;
+}
+ol {
+	color: green!important;
+}
+ol {
+	color: blue;
+}
+.line {
+	text-decoration: underline;
+}

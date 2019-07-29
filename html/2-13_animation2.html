@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Animation2</title>
+	<style>
+		div {
+			width: 150px;
+			height: 150px;
+			background: radial-gradient(white, pink);
+			border-radius: 50%;
+			text-align: center;
+			line-height: 150px;
+			position: absolute;
+			animation-name: circle;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+		@keyframes circle {
+			from {
+				left: 0;
+				top: 0;
+				transform: rotate(0deg) scale(1);
+			}
+			80% {
+				left: 510px;
+			}
+			90% {
+				left: 490px;
+			}
+			to {
+				left: 500px;
+				top: 500px;
+				transform: rotate(360deg) scale(0.5);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div>circle</div>
+</body>
+</html>

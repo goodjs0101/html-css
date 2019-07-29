@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>메뉴바</title>
+	<style>
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			background-color: #666;
+			border-radius: 5px;
+			font-size: 0px; /* 여백을 제거하는 방법 */
+		}
+		li {
+			display: inline-block;
+			font-size: 16px; /* 여백을 제거하는 방법 */
+		}
+		li:first-child a {
+			color: yellow;
+			background-color: green;
+			border-radius: 5px 0 0 5px;
+		}
+		a {
+			text-decoration: none;
+			color: #fff;
+			display: block;
+			padding: 15px 30px;
+			border-right: 1px solid #fff;
+		}
+		a:hover {
+			background: #000 url(../img/nav_arrow.gif) no-repeat left center; /* 컬러 이미지 반복x 왼쪽 중앙 */
+		}
+	</style>
+</head>
+<body>
+<ul>
+	<li><a href="">Home</a></li>
+	<li><a href="">News</a></li>
+	<li><a href="">Contact</a></li>
+	<li><a href="">About</a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>CSS 선택 방법</title>
+	<style>
+		.wrap p {
+			color: red;
+		}
+		.wrap p .line, .wrap~p {
+			text-decoration: underline;
+		}
+		.wrap>p {
+			background-color: pink;
+		}
+		.wrap+p {
+			color:green;
+		}
+		p.line {
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+<div class="wrap">
+	<p><span class="line">Paragraph 1</span> in the div.</p>
+	<p>Paragraph 2 in the div.</p>
+	<div class="box">
+		<p>Paragraph 3 in the div.</p>
+	</div>
+</div>
+<p>Paragraph 4. Not in the div.</p>
+<p class="line">Paragraph 5. Not in the div.</p>
+</body>
+</html>

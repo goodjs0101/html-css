@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>FORM</title>
+	<style>
+		body {
+			font-size: 12px;
+			font-family: dotum, sans-serif;
+		}
+		form {
+			width: 900px;
+			margin: auto;
+			padding-bottom: 30px;
+		}
+		h1 {
+			font-size: 40px;
+			font-family: batabg, serif;
+		}
+		fieldset {
+			border: none;
+			padding: 0px;
+			margin-bottom: 30px; 
+		}
+		table {
+			border-top: 2px solid red;
+			border-collapse: collapse;
+			width: 100%;
+		}
+		caption {
+			font-weight: bold;
+			font-size: 16px;
+			padding-bottom: 10px;
+			text-align: left;
+		}
+		th, td {
+			border-width: 1px 0px 1px 1px;
+			border-style: solid;
+			border-color: #a6a6a6;
+			padding: 14px;
+		}
+		th:first-child {
+			border-left: none;
+		}
+		th {
+			background-color: #ccc;
+			width: 120px;
+		}
+		input[type="button"] {
+			background-color: #333;
+			color: #fff;
+			font-size: 11px;
+			padding: 3px 5px;
+			border: none;
+		}
+		input[readonly] {
+			background-color: #e4e4e4;
+			border: 1px solid #ccc;
+			outline: none;
+			vertical-align: center;
+		}
+		.btn {
+			margin-top: 5px;
+			font-size: 14px;
+			text-align: center;
+		}
+		.btn input {
+			padding: 8px 30px;
+			border: 1px solid red;
+		}
+		.btn input[type="submit"] {
+			background-color: red;
+			color: #fff; 
+			font-weight: bold;
+		}
+		.btn input[type="reset"] {
+			background-color: #fff;
+			color: red;
+			font-weight: bold; 
+		}
+		textarea {
+			resize: none;
+		}
+		span {
+			font-size: 11px;
+			color: skyblue;
+		}
+		.tb2 {
+			border-top-color: #000; 
+		}
+		#add {
+			margin-top: 5px;
+		}
+	</style>
+</head>
+<body>
+	<form method="post">
+		<h1>회원가입</h1>
+		<fieldset>
+			<table>
+				<caption>개인정보입력</caption>
+				<tr>
+					<th scope="row"><label for="memId">회원아이디</th>
+					<td>
+						<input type="text" name="memeId" size="20" minlength="3" maxlength="15" id="memId">
+						<input type="button" value="중복 확인"><span>  공백없는 3~15자의 영문/숫자를 조합하여 입력해야 합니다.</span>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="memberPW">비밀번호</th>
+					<td><input type="password" name="mempw" minlength="8" maxlength="16" id="memberPW"><span>  공백없는 8~16자의 영문/숫자 등을 조합하여 입력해야 합니다.</span></td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="rePW">비밀번호 확인</th>
+					<td><input type="password" name="mempw" minlength="8" maxlength="16" id="rePW"><span>  비밀번호 확인을 위해 다시 한번 입력해주세요.</span></td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="memname">성명</th>
+					<td><input type="text" name="memname" id="memname" minlength="15" maxlength="30"><span>  한글 15자, 영문 30자까지 가능합니다.</span></td>
+				</tr>
+				<tr>
+					<th scope="row">성별</th>
+					<td>
+						<label><input type="radio" name="sex" value="man"> 남</label>
+						<label><input type="radio" name="sex" value="woman"> 여</label>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="birt">생년월일</th>
+					<td>
+						<label><input type="text" name="year" id="birt" size="4" maxlength="4">년</label>
+						<label><input type="text" name="month" size="2" maxlength="2">월</label>
+						<label><input type="text" name="day" size="2" maxlength="2">일</label>
+						<label><input type="radio" name="birth" value="solar" checked> 양력</label>
+						<label><input type="radio" name="birth" value="lunar"> 음력</label>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="email">이메일</th>
+					<td><input type="email" name="email" id="email"></td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="tel">연락처</th>
+					<td>
+						<select name="tel" id="tel">
+							<option>010</option>
+							<option>02</option>
+							<option>062</option>
+							<option>063</option>
+							<option>064</option>
+						</select> -
+						<input type="tel" name="tel" size="3" title="연락처 중간번호"> -
+						<input type="tel" name="tel" size="3" title="연락처 뒷번호">
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="add">주소</th>
+					<td>
+						<input type="text" name="zip" id="zip" readonly size="2" title="우편번호 앞자리">-
+						<input type="text" name="zip" id="zip" readonly size="2" title="우편번호 쥣자리">
+						<input type="button" value="우편번호 검색" size="10"><br>
+						<input type="text" name="add" size="70" title="상세주소" id="add">
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+			<table class="tb2">
+				<caption>추가정보</caption>
+				<tr>
+					<th scope="row">취미</th>
+					<td>
+						<label><input type="checkbox" name="hobby" value="sing"> 악기연주</label>
+						<label><input type="checkbox" name="hobby" value="cook"> 요리</label>
+						<label><input type="checkbox" name="hobby" value="photo"> 사진</label>
+						<label><input type="checkbox" name="hobby" value="drawing"> 그림그리기</label>
+						<label><input type="checkbox" name="hobby" value="health"> 운동</label>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="profil">프로필사진</th>
+					<td><input type="file" name="profil" id="profil"></td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="int">자기소개</th>
+					<td><textarea cols="70" rows="5" id="int"></textarea></td>
+				</tr>
+			</table>
+		</fieldset>
+		<div class="btn">
+			<input type="submit" value="입력완료">
+			<input type="reset" value="다시입력">
+		</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+/* html reset */
+* {
+	box-sizing: border-box;
+}
+article, aside, figcaption, figure, footer, header, main, nav, section { 
+    display:block; 
+}
+body, input, button, select, textarea, table {
+	font-family: Verdana, sans-serif;
+}
+body {
+	font-size: 15px;
+	line-height: 1.5;
+	color: #333;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-weight: normal;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img {
+	border: none;
+	vertical-align: top;
+	max-width: 100%; /* 반응형 웹일 경우 */
+}
+address {
+	font-size: normal;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.hidden {
+	position: absolute;
+	left: -99999px;
+	top: -99999px;
+	font-size: 0.1%;
+	line-height: 0.1%;
+	width: 0.1%;
+	height: 0.1%;
+	overflow: hidden;
+}
+.p816 {
+	padding: 8px 16px;
+}
+.p88 {
+	padding-right: 8px;
+	padding-left: 8px;
+}
+
+/* All */
+header {
+	padding: 8px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	position: fixed;
+	background: #fff;
+	width: 100%;
+	z-index: 999;
+}
+header h1 {
+	letter-spacing: 4px;
+	font-size: 15px;
+	float: left;
+}
+header h1:hover, .gnb ul a:hover {
+	background: #ccc;
+}
+header h1 span {
+	font-weight: bold;
+}
+.gnb {
+	float: right;
+}
+.gnb ul a {
+	letter-spacing: 4px;
+	display: block;
+}
+.mainImg {
+	position: relative;
+	top: 54px;
+	max-width: 1500px;
+	margin: auto;
+}
+.mainImg p {
+	font-size: 36px;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+}
+.mainImg .box {
+	background: black;
+	opacity: 0.7;
+	display: inline-block;
+	font-weight: bold;
+}
+.con {
+	padding: 54px 16px 0;
+	max-width: 1548px;
+	margin: auto;
+}
+.con>section>h1 {
+	font-size: 24px;
+	border-bottom: 1px solid #ccc;
+	margin: 60px 8px 30px;
+	padding-bottom: 15px;
+}
+#pro .img {
+	position: relative;
+	margin-bottom: 16px;
+}
+#pro .img span {
+	background: #000;
+	color: #fff;
+	position: absolute;
+	left: 8px;
+	top: 0px;
+}
+#abo .img {
+	margin-top: 30px;
+}
+#abo .img img {
+	filter: grayscale(75%);
+	/*filter: blur(3px);*/
+}
+#abo .name {
+	font-size: 24px;
+	margin-top: 15px;
+}
+#abo .job {
+	color: #a8a8a8;
+}
+#abo .img button {
+	background: #f1f1f1;
+	padding: 10px;
+	border: none;
+	width: 100%;
+	cursor: pointer;
+}
+#abo .img button:hover {
+	background: #ccc;
+}
+#con input[type="text"] {
+	display: block;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+#con input[type="text"]::placeholder {
+	color: #ccc;
+	font-size: 13px;
+}
+#con input[type="submit"] {
+	background: #000;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	margin-top: 4px;
+	padding: 8px 16px;
+}
+#con input[type="submit"]:hover {
+	background: #ccc;
+	color: #000;
+}
+footer {
+	background: #000;
+	color: #fff;
+	padding: 20px 0 20px;
+	text-align: center;
+	margin: 50px 0 0;
+}
+footer p {
+	margin: 0;
+} 
+/* Mobile */
+.gnb a.btn {
+	display: block;
+	width: 25px;
+	margin: 10px 16px;
+}
+.gnb a.btn span,
+.gnb a.btn:before, 
+.gnb a.btn:after {
+	background: #000;
+	height: 3px;
+	display: block;
+}
+.gnb a.btn span {
+	overflow: hidden;
+	margin: 5px 0;
+}
+.gnb a.btn:before, .gnb a.btn:after {
+	content: "";
+}
+.gnb ul {
+	position: absolute;
+	right: 0;
+	top: 55px;
+	display: none;
+}
+.gnb li {
+	background: #fff;
+	border-top: 1px solid #ccc;
+
+} 
+.mainImg .text {
+	display: none;
+}
+
+/* Tablet & Desktop */
+@media all and (min-width: 601px) {
+	.gnb a.btn {
+		display: none;
+	}
+	.gnb ul {
+		display: block!important;
+		top: 8px;
+	}
+	.gnb li {
+		border: none;
+		display: inline-block;
+	}
+	.mainImg .text {
+		display: inline-block;
+	}
+	.con .float .img {
+		float: left;
+	}
+}
+
+/* Tablet */
+@media all and (min-width: 601px) and (max-width: 992px) {
+	.con .float .img {
+		width: 50%;
+	}
+}
+
+/* Desktop */
+@media all and (min-width: 993px) {
+	.con .float .img {
+		width: 25%;
+	}
+}

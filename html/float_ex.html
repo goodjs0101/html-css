@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>float</title>
+	<style>
+		body {
+			font-size: 15px;
+			font-family: tahoma;
+		}
+		.wrap {
+			width: 970px;
+			margin: auto;
+			background-color: #e4e4e4;
+			border: 1px solid #999;
+			padding: 20px;
+		}
+		.clearfix:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.main {
+			width: 615px;
+			float: left;
+		}
+		h1 {
+			font-size: 40px;
+		}
+		ul {
+			margin-top: 0px;
+			padding: 0px;
+		}
+		li {
+			padding-left: 10px;
+			list-style: none;
+			background: url(../img/float_dot.gif) no-repeat 0 center;
+		}
+		.sub {
+			width: 320px;
+			float: right;
+		}
+		h3 {
+			color: #004a80;
+			border-top: 1px solid #999;
+			padding-top: 10px;
+		}
+	</style>
+</head>
+<body>
+<div class="wrap clearfix">	
+	<div class="main">
+		<div class="img1">
+			<img src="../img/float_01.jpg" alt="mainvideo">
+		</div>
+		<h1>Obama on Ferguson</h1>
+		<p>President Barack Obama appealed for calm Monday evening after the announcement that a grand jury declined to indict the Ferguson, Mo., police officer who shot and killed Michael Brown after an encounter in August.
+		Speaking from the White House about an hour after St. Louis County Prosecutor Robert McCulloch announced the long-awaited decision</p> 	
+		<ul>
+			<li>See 20 Key Moments From Ferguson</li>
+			<li>Inside the Tragedy of Ferguson</li>
+			<li>No Indictment for Ferguson Cop</li>
+		</ul>
+	</div>	
+	<div class="sub">
+		<div class="img2">
+			<img src="../img/float_02.jpg" alt="subvideo">
+		</div>
+		<h2>Elon Musk Debuts New Rocket on Twitter</h2>
+
+		<h3>SERENE JONES</h3>
+		<p>Ferguson Decision Shows the Brutality of Racism</p>
+
+		<h3>JAMES PONIEWOZIK</h3>
+		<p>Homeland Got Better By Getting Smaller</p>
+
+		<h3>KARL VICK</h3>
+		<p>Why Iran and the U.S. Need Each Other More Than Ever</p>
+	</div>
+</div>
+</body>
+</html>

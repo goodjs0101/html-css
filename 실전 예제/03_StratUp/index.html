@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>StartUp lounge</title>
+	<link rel="stylesheet" href="css/StartUp.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
+</head>
+<body>
+<a href="#here" class="skip">본문 바로가기</a>
+<header>
+	<div class="wrap clearfix">
+		<h1><a href="#"><img src="img/StarUp_logo.png" alt="StarUp"></a></h1>
+		<nav class="gnb">
+			<ul>
+				<li><a href="#"><img src="img/gnb_program.png" alt="program"></a></li>
+				<li><a href="#"><img src="img/gnb_ideaproposal.png" alt="ideaproposal"></a></li>
+				<li><a href="#"><img src="img/gnb_e-learning.png" alt="e-learning"></a></li>
+				<li><a href="#"><img src="img/gnb_investment.png" alt="investment"></a></li>
+				<li><a href="#"><img src="img/gnb_job.png" alt="job"></a></li>
+				<li><a href="#"><img src="img/gnb_information.png" alt="information"></a></li>
+			</ul>
+		</nav>
+		<ul class="util">
+			<li><a href="#">LOGIN<span></span></a></li>
+			<li><a href="#">JOIN US<span></span></a></li>
+			<li><a href="#">SITEMAP<span></span></a></li>
+			<li><a href="#">KOREA</a></li>
+		</ul>
+		<input type="search" maxlength="6">
+	</div>
+</header>
+<div class="box_line"></div>
+<main>
+	<div class="wrap">
+		<div class="main_left">
+			<div class="sliderBox">
+				<div class="slider">
+				  <div><a href=""><img src="img/main-1.png" alt="Dream And Passion"></a></div>
+				  <div><a href=""><img src="img/main-2.png" alt="Passion And Challenge"></a></div>
+				  <div><a href=""><img src="img/main-3.png" alt="Hope And Dream"></a></div>
+				</div>
+			</div>
+			<section>
+				<div class="ois">
+					<a href="#"><img src="img/Online_incorporation_system.png" alt="Online_incorporation_system"></a>
+				</div>
+				<div class="amb">
+					<a href="#"><img src="img/Application_management_business.png" alt="Application_management_business"></a>
+				</div>
+			</section>
+		</div>
+		<div class="main_right">
+			<div class="ss">
+				<a href="#"><img src="img/Startups_Simulator.png" alt="Startups_Simulator"></a>
+			</div>
+			<div class="sc">
+				<a href="#"><img src="img/Starops_Counseling.png" alt="Starops_Counseling"></a>
+			</div>
+			<div class="bme">
+				<a href="#"><img src="img/Business_model_Evaluation.png" alt="Business_model_Evaluation"></a>
+			</div>
+			<div class="ba">
+				<a href="#"><img src="img/Business_announcements.png" alt="Business_announcements"></a>
+			</div>
+			<div class="pm">
+				<a href="#"><img src="img/Performance_Management.png" alt="Performance_Management"></a>
+			</div>
+			<div class="ban1">
+				<a href="#"><img src="img/Online_course.png" alt="Online_course"></a>
+			</div>
+			<div class="ban2">
+				<a href="#"><img src="img/Self-Diagnosis.png" alt="Self-Diagnosis"></a>
+			</div>
+		</div>
+	</div>
+</main>
+<nav class="lnb wrap">
+	<div class="rollBox">
+		<ul class="roll"> 
+			<li><a href="#"><img src="img/bottom_1.png" alt=""></a></li>
+			<li><a href="#"><img src="img/bottom_2.png" alt=""></a></li>
+			<li><a href="#"><img src="img/bottom_3.png" alt=""></a></li>
+			<li><a href="#"><img src="img/bottom_4.png" alt=""></a></li>
+			<li><a href="#"><img src="img/bottom_5.png" alt=""></a></li>
+			<li><a href="#"><img src="img/bottom_6.png" alt=""></a></li>
+			<li><img src="img/bottom_blank.png" alt=""></li>
+			<li><img src="img/bottom_blank.png" alt=""></li>
+		</ul>
+	</div>
+</nav>
+<footer>
+	<div class="wrap clearfix">
+		<img src="img/logo_bottom.png" alt="Startup_bottom" class="footerlogo">
+		<div class="info">
+			<p><span class="ag">Agreement</span><span class="a_bar"></span>Privacy Policy<span class="a_bar"></span>Use guide<span class="a_bar"></span>This cyber clean and count and center</p>
+			<address>Business registration 000-000-0010<span class="b_bar"></span>representative am Hong Kil Dong<span class="b_bar"></span>business registration number the 0000-0000-00000</address>
+			<small>Copyright StratUp. All Rights REserved.</small>
+		</div>
+	</div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.slider').bxSlider({
+    });
+    $('.roll').bxSlider({
+    	mode: 'horizontal',
+    	pause: 2000,
+    	minSlides: 4,
+    	maxSlides: 4,
+    	slideWidth: 1000,
+    	pager: false
+    });
+  });
+</script>
+</body>
+</html>

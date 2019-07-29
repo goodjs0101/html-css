@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>가상 클래스</title>
+	<style>
+		h1:hover{
+			text-decoration: underline;
+		}
+		a {
+			color: green;
+			text-decoration: none;
+		}
+		a:link { /* 방문하지 않은 사이트 */
+			color:black;
+		}
+		a:visited { /* 방문한 사이트 */
+			color: silver;
+		}
+		a:hover, a:focus {
+			text-decoration: underline;
+			color: red;
+			background-color: pink;
+		}
+		a:active { /* 활성화(클릭) */
+			background-color: black;
+			color:white;
+		}
+		ol li:first-child {
+			color: yellow;
+		}
+		ol li:last-child {
+			color: orange;
+		}
+		ol li:nth-child(3) {
+			color: red;
+		}
+		ol li:nth-last-child(3) {
+			color: blue;
+		}
+		ol li:nth-child(odd) {
+			background-color: pink;
+		}
+		ol li:nth-child(even) {
+			background-color: yellow;
+		}
+		p:before {
+			content: "시작_";
+		}
+		p:after {
+			content: "_끝";
+		}
+		p:first-line {
+			text-decoration: underline;
+		}
+		p:first-letter {
+			background-color: yellow;
+		}
+		::selection {
+			background-color: gold;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+<h1>가상 클래스</h1>
+<h2>1. 링크와 관련된 가상 클래스</h2>
+<ul>
+	<li><a href="https://naver.com">네이버</a></li>
+	<li><a href="https://daum.net">다음</a></li>
+	<li><a href="https://google.com">구글</a></li>
+	<li><a href="https://nate.com">네이트</a></li>
+</ul>
+<h2>2. 순서와 관련된 가상 클래스</h2>
+<ol>
+	<li>딸기</li>
+	<li>참외</li>
+	<li>망고</li>
+	<li>자몽</li>
+	<li>포도</li>
+	<li>사과</li>
+	<li>자두</li>
+	<li>수박</li>
+	<li>감귤</li>
+	<li>멜론</li>
+</ol>
+<h2>3. 가상 요소 선택자</h2>
+<p>그들에게 청춘 품고 속에 위하여, 없으면, 이것이다. 실로 보는 품었기 노년에게서 인간에 가진 이상은 것이다.</p>
+<P>온갖 위하여 뛰노는 고행을 그들의 따뜻한 피부가 사막이다. 봄날의 이상을 그들은 기쁘며, 이상 두기 힘있다.</P>
+<P>되려니와, 구하지 되는 속에 이 청춘은 듣기만 보라. 위하여, 그들은 청춘의 곧 쓸쓸하랴?</P>
+</body>
+</html>

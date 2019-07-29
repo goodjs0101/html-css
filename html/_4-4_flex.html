@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Flex Layout</title>
+<style>
+* {
+	box-sizing: border-box;
+}
+article, aside, figcaption, figure, footer, header, main, nav, section { 
+    display:block; 
+}
+body, input, button, select, textarea {
+	font-family: verdana, sans-serif;
+}
+body {
+	margin: 0;
+	font-size: 15px;
+	line-height: 1.5;
+	color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img {
+	vertical-align: top;
+	border: none;
+	max-width: 100%;
+}
+address {
+	font-style: normal;
+}
+
+/* layout */
+.wrap {
+	max-width: 1200px;
+	min-width: 650px;
+	margin: auto;
+}
+header, footer {
+	background: #333;
+	color: #fff;
+	padding: 20px;
+}
+header h1 {
+	margin-bottom: 20px;
+}
+.con {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.con>section>h1 {
+	text-transform: uppercase;
+}
+.con section {
+	border: 1px solid #aaa;
+	padding: 20px;
+}
+.con section img {
+	margin-bottom: 30px;
+}
+.con button {
+	background: #ccc;
+	border: none;
+	width: 100%;
+	padding: 8px;
+	border-radius: 20px;
+	cursor: pointer;
+}
+footer p {
+	margin: 0;
+}
+
+/* layout-flex */
+ul, .con {
+	display: flex;
+	justify-content: space-between;
+}
+.con section {
+	width: 23%;
+	display: flex;
+	flex-direction: column;
+}
+.con section button {
+	margin-top: auto;
+}
+footer .wrap {
+	display: flex;
+	justify-content: space-between;
+}
+</style>
+</head>
+<body>
+<header>
+	<h1><a href="#">Flex Layout</a></h1>
+	<nav class="gnb wrap">
+		<ul>
+			<li><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+			<li><a href="#">menu4</a></li>
+			<li><a href="#">menu5</a></li>
+		</ul>
+	</nav>
+</header>
+<div class="img">
+	<img src="http://placehold.it/2000x400/e4e4e4/fff?text=Main Image" alt="">
+</div>
+<div class="con wrap">
+	<section>
+		<img src="http://placehold.it/500x350?text=sample" alt="">
+		<h1>first</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur mi vitae neque pretium gravida. Nullam fermentum feugiat egestas. Donec a libero sit amet orci interdum porttitor eu non dolor. Ut porttitor mauris consectetur.</p>
+		<button type="button">click</button>
+	</section>
+	<section>
+		<img src="http://placehold.it/500x350?text=sample" alt="">
+		<h1>second</h1>
+		<p>Rutrum arcu a, tincidunt tortor. Nam quis nunc erat. Mauris viverra leo non quam rutrum gravida. Duis blandit leo nec consequat tristique. In hac habitasse platea dictumst. Donec non nisl eu mauris elementum placerat nec et turpis nulla eget sapien vitae velit dignissim consectetur. Aliquam blandit.</p>
+		<button type="button">click</button>
+	</section>
+	<section>
+		<img src="http://placehold.it/500x350?text=sample" alt="">
+		<h1>third</h1>
+		<p>Praesent eget nisl quis ipsum vestibulum vulputate congue sed metus. Sed sagittis leo quis quam fermentum ullamcorper.</p>
+		<button type="button">click</button>
+	</section>
+	<section>
+		<img src="http://placehold.it/500x350?text=sample" alt="">
+		<h1>fourth</h1>
+		<p>Fusce ultrices, libero et maximus laoreet, neque nulla pulvinar nibh, quis dignissim nibh ligula ac velit. Nulla facilisi. Donec orci justo, fermentum vel neque ut, malesuada lacinia turpis. Orci varius natoque penatibus et magnis dis parturient montes.</p>
+		<button type="button">click</button>
+	</section>
+</div>
+<footer>
+	<div class="wrap">
+		<p><small>Copyright &copy; YJS. All rights reserved.</small></p>
+		<a href="#">top&uarr;</a>
+	</div>
+</footer>
+</body>
+</html>

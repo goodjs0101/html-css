@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Table</title>
+	<style>
+		table {
+			width: 600px;
+			margin: auto;
+			border-collapse: collapse;
+		}
+		caption {
+			font: bold 20px 바탕, serif;
+			text-align: left;
+			padding-bottom: 10px;
+		}
+		th, td {
+			padding: 7px;
+		}
+		th {
+			background-color: #e4e4e4;
+			border-top: 1px solid #aaa;
+			border-left: 1px solid #aaa;
+			border-bottom: 2px solid orange;
+		}
+		th:first-child {
+			border-left: none;
+		}
+		td {
+			text-align: center;
+			border-left: 1px solid #aaa;
+			border-bottom: 1px solid #aaa;
+		}
+		td:first-child {
+			border-left: none;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<caption>디저트 메뉴</caption>
+		<tr>
+			<th scope="col">종류</th>
+			<th scope="col">메뉴명</th>
+			<th scope="col">가격</th>
+		</tr>
+		<tr>
+			<td>조각 케이크</td>
+			<td>딸기 케이크</td>
+			<td>3800원</td>
+		</tr>
+		<tr>
+			<td>조각 케이크</td>
+			<td>치즈 케이크</td>
+			<td>3800원</td>
+		</tr>
+		<tr>
+			<td>조각 케이크</td>
+			<td>초콜렛 케이크</td>
+			<td>3400원</td>
+		</tr>
+		<tr>
+			<td>홀 케이크</td>
+			<td>딸기 쇼트(12cm)</td>
+			<td>18000원</td>
+		</tr>
+		<tr>
+			<td>홀 케이크</td>
+			<td>딸기 쇼트(18cm)</td>
+			<td>28000원</td>
+		</tr>
+		<tr>
+			<td>타르트</td>
+			<td>사과 타르트</td>
+			<td>4000원</td>
+		</tr>
+		<tr>
+			<td>타르트</td>
+			<td>레몬 크림 타르트</td>
+			<td>3400원</td>
+		</tr>
+		<tr>
+			<td>타르트</td>
+			<td>초코 바나나 타르트</td>
+			<td>3400원</td>
+		</tr>
+	</table>
+</body>
+</html>

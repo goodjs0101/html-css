@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+/* html reset */
+* {
+	box-sizing: border-box;
+}
+article, aside, figcaption, figure, footer, header, main, nav, section { 
+    display:block; 
+}
+body, input, button, select, textarea, table {
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 12px;
+}
+body {
+	font-size: 15px;
+	line-height: 1.5;
+	color: #333;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight: normal;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+li {
+	display: inline-block;
+}
+img {
+	border: none;
+	vertical-align: top;
+	max-width: 100%; /* 반응형 웹일 경우 */
+}
+address {
+	font-size: normal;
+	font-style: normal;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.hidden {
+	position: absolute;
+	left: -99999px;
+	top: -99999px;
+	font-size: 0.1%;
+	line-height: 0.1%;
+	width: 0.1%;
+	height: 0.1%;
+	overflow: hidden;
+}
+
+/* layout */
+.wrap {
+	width: 940px;
+	margin: auto;
+}
+a.skip {
+	height: 1px;
+	display: block;
+	overflow: hidden;
+	position: absolute;
+}
+a.skip:focus {
+	height: auto;
+	background: #333;
+	color: #fff;
+	font-size: 12px;
+	padding: 8px 30px;
+}
+header {
+	padding: 35px 0 0px;
+}
+header .wrap {
+	position: relative;
+}
+header h1 {
+	padding:14px 51px 0;
+	float: left;
+}
+.gnb ul {
+	line-height: 30px;
+	float: right;
+	font-size: 0;
+}
+.gnb>ul>li>a {
+	display: block;
+	font-size: 17px;
+	color: #545454;
+	font-weight: bold;
+	padding: 16px 20px 26px;
+	letter-spacing: -0.5px;
+}
+.gnb>ul>li>a:hover {
+	background: #2b8ed1;
+	color: #fff;
+}
+.gnb>ul li {
+	background: url(../img/bar_top.gif) no-repeat left 20px;
+}
+.gnb>ul li:hover+li {
+	background: none;
+}
+.gnb>ul li:first-child {
+	background: none;
+}
+.util {
+	position: absolute;
+	right: 0;
+	top: -25px;
+	font-size: 0;
+}
+.util li {
+	padding-left: 10px;
+	margin-left: 10px;
+	background: url(../img/bar_utill.jpg) no-repeat left center;	
+}
+.util li:first-child {
+	background: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+.util li a {
+	font-size: 9px;
+	color: #939393;
+	font-weight: bold;
+}
+.box {
+	border: 3px solid #2b8ed1;
+	width: 940px;
+	margin: auto;
+}
+.body {
+	background: #edeee6;
+}
+.bar {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 21px;
+	position: relative;
+}
+.lnb {
+	font-weight: bold;
+	padding: 11px 11px 0;
+	font-size: 0;
+	position: relative;
+	top: -55px;
+}
+.lnb ul:first-child {
+	padding-left: 0;
+}
+.lnb li {
+	font-size: 12px;
+	padding: 13px 17px;
+	background: url(../img/long_bar.png) no-repeat left center;
+}
+main h1 {
+	font-size: 28px;
+	font-weight: bold;
+	float: left;
+	margin-top: -40px;
+}
+main .root {
+	font-size: 12px;
+	font-family: "Dotum", sans-serif;
+	float: left;
+	margin-left: 20px;
+	margin-top: -20px;
+}
+main .root span {
+	font-weight: bold;
+}
+main .graph {
+	float: left;
+	margin-top: 50px;
+}
+main .text {
+	font-size: 13px;
+	padding-top: 72px;
+	padding-left: 550px;
+}
+.con {
+	padding-top: 53px;
+	clear: both;
+	display: flex;
+}
+footer {
+	color: #878787;
+	font-size: 12px;
+	text-align: center;
+	margin: 50px;
+	font-weight: bold;
+}

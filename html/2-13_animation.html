@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Animation</title>
+	<style>
+		.box {
+			width: 600px;
+			border: 3px solid #000;
+			padding: 30px;
+		}
+		.bar {
+			width: 10px;
+			height: 50px;
+			background-color: pink;
+			margin: 5px 0;
+			animation-name: graph;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+		.bar:hover {
+			animation-play-state: paused;
+		}
+		@keyframes graph { /* @keyframes 영어이름 */
+			from {
+				width: 10px;
+				background-color: pink;
+			}
+			50% {
+				background-color: yellow;
+				width: 100%;
+			}
+			to {
+				width: 100%;
+				background-color: magenta;
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="box">
+	<div class="bar"></div>
+	<div class="bar"></div>
+	<div class="bar"></div>
+</div>
+</body>
+</html>
